@@ -1,4 +1,3 @@
-// index.js
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -8,7 +7,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Появление элементов при прокрутке
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
